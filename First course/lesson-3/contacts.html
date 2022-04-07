@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script
+            src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+            type="text/javascript"
+        ></script>
+        <title>BlackHole</title>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <h2 class="header-2">Свяжитесь с&nbsp;нами</h2>
+        <p class="paragraph">
+            По&nbsp;всем интересующим вопросам, связанным с&nbsp;черными дырами, обращайтесь.
+        </p>
+        <img src="assets/img/blackhole.png" alt="черная дыра" />
+        <h4 class="header-4">Где нас найти</h4>
+        <p class="paragraph">Вирус на&nbsp;улице, давайте общаться удаленно :)</p>
+        <h4 class="header-4">Телефоны</h4>
+        <ul>
+            <li>89992002020</li>
+            <li>89994004040</li>
+        </ul>
+        <h4 class="header-4">Онлайн сервисы</h4>
+        <ul>
+            <li><a href="https://habr.com/ru/post/526446/">Обязательно почитайте!</a></li>
+            <li><a href="mailto:ask@htmlbook.ru">Напишите нам на&nbsp;почту</a></li>
+        </ul>
+        <h4 class="header-4">Отправьте нам весточку</h4>
+        <form action="#">
+            <label for="username">ФИО</label>
+            <input
+                class="input-common"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Имя"
+            /><br />
+            <label for="useremail">Почта</label>
+            <input
+                class="input-common"
+                type="email"
+                name="useremail"
+                id="useremail"
+                placeholder="mail@mail.ru"
+            /><br />
+            <label>Сообщение</label> <br />
+            <textarea
+                class="input-common"
+                placeholder="Введите сообщение"
+                cols="30"
+                rows="5"
+            ></textarea>
+            <br />
+            <button class="button-submit" type="submit">Отправить</button>
+        </form>
+        <br />
+        <p class="paragraph">Зачем карта тут не знаю, но пусть будет так, как попросили :)</p>
+        <div id="map" style="width: 600px; height: 400px"></div>
+        <h3 class="header-3">Создатель</h3>
+        <p class="paragraph">
+            На&nbsp;самом деле все не&nbsp;так ужасно, как кажется. Сверхмассивные черные дыры
+            являются основой галактик.
+        </p>
+        <hr />
+        <ul>
+            <li><b>Телеграм:</b> @blackhole_expert</li>
+            <li><b>Номер телефона:</b> 89992002020</li>
+            <li><b>Электронная почта:</b> blackhole@mail.ru</li>
+        </ul>
+        <p class="paragraph"><i>&copy;&nbsp;Все права защищены</i></p>
+
+        <script type="text/javascript">
+            ymaps.ready(init);
+            function init() {
+                var myMap = new ymaps.Map('map', {
+                    center: [55.76, 37.64],
+                    zoom: 7,
+                });
+            }
+        </script>
+    </body>
+</html>

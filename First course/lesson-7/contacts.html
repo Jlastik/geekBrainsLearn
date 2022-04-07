@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=qwe&lang=ru_RU"></script>
+    <title>BlackHole</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li>
+            <a href="index.html"
+              ><img src="assets/img/navigation.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="contacts.html"
+              ><img src="assets/img/profile.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper wrapper_contacts">
+      <div class="container contact-main">
+        <h2 class="contact-main__header">Contact Us</h2>
+        <p class="contact-main__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+
+    <div class="container contact-info__container">
+      <div class="contact__info">
+        <img
+          class="contact__image"
+          src="assets/img/contact_img.png"
+          alt="img"
+        />
+        <div class="contact-info__address">
+          <h4 class="address__header">address</h4>
+          <p class="address__text">
+            Id convallis placerat sit sed duis id amet volutpat quam a,
+            pharetra.
+          </p>
+        </div>
+
+        <div class="contact-info__phones">
+          <h4 class="phone__header">phone</h4>
+          <ul class="phone_list">
+            <li class="phone__text phone__text_margin">
+              <img
+                class="phone__image"
+                src="assets/img/ic_phone.svg"
+                alt=""
+              />+7-812-7313-4321
+            </li>
+            <li class="phone__text">
+              <img
+                class="phone__image"
+                src="assets/img/ic_phone.svg"
+                alt=""
+              />+7-817-0000-1234
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info__services">
+          <h4 class="service__header">onlibe service</h4>
+          <ul class="service__text">
+            <li class="service__item service__item_margin">
+              <a
+                class="service__text_link"
+                href="https://habr.com/ru/post/526446/"
+                ><img
+                  class="service__icon"
+                  src="assets/img/ic_language.svg"
+                  alt=""
+                />www.site.com</a
+              >
+            </li>
+            <li class="service__item">
+              <a class="service__text_link" href="mailto:ask@htmlbook.ru"
+                ><img
+                  class="service__icon"
+                  src="assets/img/ic_email.svg"
+                  alt=""
+                />mailto:ask@htmlbook.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h4 class="form__header">send us message</h4>
+        <form class="form" action="#">
+          <div class="contact-form__container">
+            <div class="contact-form__name">
+              <label class="form__label" for="username">Full Name</label>
+              <input
+                class="input-common"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div class="contact-form__email">
+              <label class="form__label" for="useremail">Email</label>
+              <input
+                class="input-common"
+                type="email"
+                name="useremail"
+                id="useremail"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div class="contact-form__message">
+              <label class="form__label">Message</label>
+              <textarea
+                class="input-common"
+                placeholder="Your Message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <button class="button-submit" type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container map">
+      <div class="map__content" id="map"></div>
+    </div>
+
+    <div class="wrapper footer">
+      <div class="container footer__container">
+        <div class="footer__text_container">
+          <h4 class="footer__header">Intersted to woek with our team?</h4>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="footer__button_container">
+          <button class="footer__button">Let’s Talk</button>
+        </div>
+      </div>
+      <hr class="footer__devider" />
+      <div class="container contacts__container">
+        <div class="footer__contacts">
+          <ol class="contacts__list">
+            <li class="contacts__item">@blackhole_expert</li>
+            <li class="contacts__item">89992002020</li>
+            <li class="contacts__item">blackhole@mail.ru</li>
+          </ol>
+          <div class="contacts__rules">
+            <p class="rules__text">
+              <i>&copy;&nbsp;Все права защищены</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 7,
+        });
+      }
+    </script>
+  </body>
+</html>
