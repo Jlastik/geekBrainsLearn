@@ -22,16 +22,64 @@
             <img src="assets/svg/search-icon.svg" alt="" />
           </div>
           <div class="nav-right">
-            <img src="assets/svg/burderg-icon.svg" alt="" /><img
-              src="assets/svg/profile-icon.svg"
+            <svg
+              class="burger__button"
+              id="burget_button"
+              width="32"
+              height="23"
+              viewBox="0 0 32 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                fill="#E8E8E8"
+              />
+            </svg>
+            <img src="assets/svg/profile-icon.svg" alt="" /><img
+              src="assets/svg/cart-icon.svg"
               alt=""
-            /><img src="assets/svg/cart-icon.svg" alt="" />
+            />
           </div>
         </nav>
       </div>
     </header>
     <main>
       <section class="main-section">
+        <div id="burger_menu" class="burger__menu">
+          <div id="burger_close" class="burger__menu_close">X</div>
+          <p>menu</p>
+          <div class="burger__menu_category">
+            <p>man</p>
+            <ul>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Bags</a></li>
+              <li><a href="">Denim</a></li>
+              <li><a href="">T-Shirts</a></li>
+            </ul>
+          </div>
+          <div class="burger__menu_category">
+            <p>woman</p>
+            <ul>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Jackets & Coats</a></li>
+              <li><a href="">Polos</a></li>
+              <li><a href="">T-Shirts</a></li>
+              <li><a href="">Shirts</a></li>
+            </ul>
+          </div>
+          <div class="burger__menu_category">
+            <p>kids</p>
+            <ul>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Jackets & Coats</a></li>
+              <li><a href="">Polos</a></li>
+              <li><a href="">T-Shirts</a></li>
+              <li><a href="">Shirts</a></li>
+              <li><a href="">Bags</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="container">
           <div class="main">
             <div class="main__img">
@@ -243,5 +291,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
