@@ -349,18 +349,27 @@ footer {
 .subscribe__button-group {
   display: flex;
   margin-top: 32px;
-  input {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #222224;
-    opacity: 0.67;
-    border: none;
-    background: #e1e1e1;
-    padding: 16px 64px 16px 22px;
-    border-radius: 20px 0 0 20px;
+  form {
+    input {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #222224;
+      opacity: 0.67;
+      border: none;
+      background: #e1e1e1;
+      padding: 16px 64px 16px 22px;
+      border-radius: 20px 0 0 20px;
+      &:focus-visible {
+        outline: none;
+      }
+      &:valid {
+        background: rgba(104, 212, 71, 0.247);
+      }
+    }
   }
   button {
+    cursor: pointer;
     border: none;
     background: #f16d7f;
     border-radius: 0 20px 20px 0;
@@ -369,6 +378,9 @@ footer {
     line-height: 17px;
     color: #ffffff;
     padding: 16px 22px 16px 22px;
+    &:hover {
+      background: #e75669;
+    }
   }
 }
 

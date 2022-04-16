@@ -268,8 +268,10 @@
               <p>subscribe</p>
               <p>for our newletter and promotion</p>
               <div class="subscribe__button-group">
-                <input placeholder="Enter Your Email" type="email" />
-                <button>Subscribe</button>
+                <form id="email_form" action="#">
+                  <input required placeholder="Enter Your Email" type="email" />
+                </form>
+                <button form="email_form" type="submit">Subscribe</button>
               </div>
             </div>
           </div>

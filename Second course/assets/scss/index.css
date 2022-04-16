@@ -406,7 +406,7 @@ footer {
   margin-top: 32px;
 }
 
-.subscribe__button-group input {
+.subscribe__button-group form input {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -418,7 +418,16 @@ footer {
   border-radius: 20px 0 0 20px;
 }
 
+.subscribe__button-group form input:focus-visible {
+  outline: none;
+}
+
+.subscribe__button-group form input:valid {
+  background: rgba(104, 212, 71, 0.247);
+}
+
 .subscribe__button-group button {
+  cursor: pointer;
   border: none;
   background: #f16d7f;
   border-radius: 0 20px 20px 0;
@@ -427,6 +436,10 @@ footer {
   line-height: 17px;
   color: #ffffff;
   padding: 16px 22px 16px 22px;
+}
+
+.subscribe__button-group button:hover {
+  background: #e75669;
 }
 
 .footer {
